@@ -1,8 +1,13 @@
+
 var PersonController = function (model, view) {
     this.model = model;
     this.view = view;
+    this.model.loadSavedData();
+    this.view.buildList();
+
 
     this.init();
+
 };
 
 PersonController.prototype = {
@@ -11,6 +16,7 @@ PersonController.prototype = {
         this.createChildren()
             .setupHandlers()
             .enable();
+
     },
 
     createChildren: function () {
