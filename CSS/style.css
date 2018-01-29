@@ -3,7 +3,7 @@ html, body {
   color: #474747;
 }
 .navbar {
-  background-color: #48ACF0;
+  background-color: #0174d8;
   border-bottom: 1px solid rgba(0,0,0,.1);
   height: 100px;
 }
@@ -44,8 +44,8 @@ p {
 }
 
 .btn {
-  background-color: #48ACF0;
+  background-color: #0174d8;
   color: #DDD;
 }
 
-.dropdown-item.active, .dropdown-item:active { background-color: #48ACF0; }
+.dropdown-item.active, .dropdown-item:active { background-color: #0174d8; }
