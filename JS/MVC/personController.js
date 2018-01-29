@@ -23,16 +23,34 @@ PersonController.prototype = {
     setupHandlers: function () {
 
         this.addPersonHandler = this.addPerson.bind(this);
+        this.selectPersonHandler = this.selectPerson.bind(this);
+        this.unselectPersonHandler = this.unselectPerson.bind(this);
+        this.deletePersonHandler = this.deletePerson.bind(this);
         return this;
     },
 
     enable: function () {
 
         this.view.addPersonEvent.attach(this.addPersonHandler);
+        this.view.deletePersonEvent.attach(this.deletePersonHandler);
+        this.view.selectPersonEvent.attach(this.selectPersonHandler);
+        this.view.unselectPersonEvent.attach(this.unselectPersonHandler);
         return this;
     },
 
     addPerson: function (sender, args) {
-        this.model.addPerson(args.name);
+        this.model.addPerson(args.person);
+    },
+
+    selectPerson: function (sender, args) {
+        this.model.setSelectedPerson(args.personIndex);
+    },
+
+    unselectPerson: function (sender, args) {
+        this.model.unselectPerson(args.personIndex);
+    },
+
+    deletePerson: function () {
+        this.model.deletePerson();
     }
 };
