@@ -1,3 +1,4 @@
+
 function addName() {
     var node = document.createElement("li");
     var name = document.getElementById('name-input');
@@ -6,10 +7,10 @@ function addName() {
     node.appendChild(textNode);
     document.getElementById("name-list").appendChild(node);
     name.value = "";
-}
+};
 
 function keyPress(event) {
     if(event.keyCode == 13){
         addName();
     }
-}
+};
