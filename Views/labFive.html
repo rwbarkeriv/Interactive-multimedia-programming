@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab #5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-toggleable-md navbar-light justify-content-between">
+      <a class="navbar-brand" href="index.html">IMP</a>
+      <div class="navbar-toggler-right justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Labs
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="../Views/index.html">Lab #1</a>
+              <a class="dropdown-item" href="../Views/labTwo.html">Lab #2</a>
+              <a class="dropdown-item" href="../Views/labThree.html">Lab #3</a>
+              <a class="dropdown-item" href="../Views/labFour.html">Lab #4</a>
+              <a class="dropdown-item active" href="../Views/labFive.html">Lab #5</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+      <h1 class="text-center">Lab #5</h1>
+
+      <h1 class="mt-5">Assignment #1</h1>
+      <p class="lead">jQuery</p>
+      <hr class="my-4">
+
+      <p>
+        <strong>1.</strong> What you can do with jQuery?<br>
+        jQuery is meant to help make the client-side scripting easier. It also simplifies creating events and animations
+        on the webpage. One very useful feature is the "$(document).ready" function. The window.onload() has similar
+        usage but it does not run until after all images are loaded and jQuery is able to bypass that.<br><br>
+
+        <strong>2.</strong> How it can help you as web developer?<br>
+        It makes it easier and requires less code to do things such as selecting elements and DOM manipulation based off
+        of element names and attributes. It helps developers save time and space by providing convenient and efficient
+        features.<br><br>
+
+        <strong>3.</strong> If you think our earlier participant list app, in what kind of issues you could use
+        jQuery?<br>
+        You are able to use the add() function to add the new names to the person list. jQuery would also be able to
+        simplify the code in regards to selecting elements and manipulating the CSS selectors related to those elements.<br><br>
+
+        <strong>4.</strong> What are CDNs? What kind of benefits do you get if you use them?<br>
+        CDN, or Content Delivery Network, is used as a means to efficiently spread services to a large amount of people.
+        CDNs provide developers with availability to numerous services and in turn can increase their performance. CDNs
+        are able to be pre-cached meaning if someone has visited the site before the file will already be downloaded.
+        Many of the CDNs have data centers across the world so if an international user is trying to acess your site a
+        CDN may improve the speed. A CDN can distribute the load, save bandwidth, boost performance, and lower your
+        hosting costs.
+      </p>
+
+
+      <h1 class="mt-5">Assignment #2</h1>
+      <p class="lead">jQuery Person List</p>
+      <hr class="my-4">
+
+      <div class="js-container">
+        <input type="text" class="js-person-textbox">
+        <input type="button" class="js-add-person-button" value="Add Person">
+        <input type="button" class="js-delete-person-button" value="Delete Person">
+        <div class="js-person-container"></div>
+      </div>
+
+      <h1 class="mt-5">Assignment #3</h1>
+      <p class="lead">Ajax Person List</p>
+      <hr class="my-4">
+
+    </div>
+
+    <script src="../JS/jqueryPersonList/eventDispatcher.js"></script>
+    <script src="../JS/jqueryPersonList/personModel.js"></script>
+    <script src="../JS/jqueryPersonList/personView.js"></script>
+    <script src="../JS/jqueryPersonList/personController.js"></script>
+    <script src="../JS/jqueryPersonList/app.js"></script>
+    <script src="../JS/animate.js"></script>
+  </body>
+</html>
