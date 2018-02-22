@@ -1,31 +1,57 @@
-var canvas = document.getElementsByTagName("canvas")[0];
-var context = canvas.getContext("2d");
-var height = canvas.height = window.innerHeight;
-var width = canvas.width = window.innerWidth;
-var mouseClicked = false, mouseReleased = true;
 
-document.addEventListener("mousedown", onMouseClick, false);
-document.addEventListener("mousemove", onMouseMove, false);
+var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext("2d"),
+    guideCanvas = document.getElementById("guide-canvas"),
+    guideCtx = guideCanvas.getContext("2d"),
+    drawing = false,
+    lastX = 0,
+    lastY = 0,
+    curX = 0,
+    curY = 0,
+    startX = 0,
+    startY = 0,
+    lineThickness = 1;
 
-function onMouseClick(e) {
-    mouseClicked = !mouseClicked;
-}
+canvas.width = canvas.height = 500;
 
-function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
+guideCanvas.width = guideCanvas.height = 500;
 
-function onMouseMove(e) {
-    if (mouseClicked) {
-        context.beginPath();
-        context.arc(e.clientX, e.clientY, 7.5, 0, Math.PI * 2, false);
-        context.lineWidth = 5;
-        context.strokeStyle = getRandomColor();
-        context.stroke();
+guideCanvas.onmousedown = function(e) {
+    startX = e.pageX - this.offsetLeft;
+    startY = e.pageY - this.offsetTop;
+    drawing = true;
+
+};
+
+guideCanvas.onmouseup = function(e){
+    drawing = false;
+
+    ctx.strokeStyle = "#293";
+    ctx.beginPath();
+    ctx.moveTo(startX, startY);
+    ctx.lineTo(lastX, lastY);
+    ctx.stroke();
+
+    guideCtx.clearRect(0, 0, 600, 600);
+};
+
+guideCanvas.onmouseclick = function(e) {
+
+    startX = e.pageX - this.offsetLeft;
+    startY = e.pageY - this.offsetTop;
+
+    drawing = true;
+};
+
+
+guideCanvas.onmousemove = function(e) {
+    if(drawing){
+        lastX = e.pageX - this.offsetLeft;
+        lastY = e.pageY - this.offsetTop;
+        guideCtx.clearRect(0,0,600,600);
+        guideCtx.beginPath();
+        guideCtx.moveTo(startX ,startY );
+        guideCtx.lineTo(lastX, lastY);
+        guideCtx.stroke();
     }
 }
