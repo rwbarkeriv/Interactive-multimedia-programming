@@ -1,0 +1,20 @@
+
+.row {
+  text-align: center;
+}
+
+.image {
+  display: inline-block;
+  width: 13em;
+  height: 13em;
+  border: 0.5em solid #DDD;
+}
+
+.form-control, .btn {
+  border-radius: 0;
+}
+
+.input {
+  width: auto;
+  display: inline-block;
+}

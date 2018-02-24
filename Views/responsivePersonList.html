@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/personList.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-            crossorigin="anonymous"></script>
-    <title>Responsive Person List</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/personList.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+          integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+          crossorigin="anonymous"></script>
+  <title>Responsive Person List</title>
+</head>
+<body>
 
-    <div id="name-list-container">
-      <h1>Person List</h1>
-      <div class="input-container">
-        <input type="text" class="input" id="name-input" placeholder="Name" aria-label="Name"
-               aria-describedby="basic-addon2" onkeydown="keyPress(event)">
-        <button class="btn" type="button" onclick="addName()">Add</button>
-      </div>
-      <div class="name-list-container">
-        <ul id="name-list">
+<div id="name-list-container">
+  <h1>Person List</h1>
+  <div class="input-container">
+    <input type="text" class="input" id="name-input" placeholder="Name" aria-label="Name"
+           aria-describedby="basic-addon2" onkeydown="keyPress(event)">
+    <button class="btn" type="button" onclick="addName()">Add</button>
+  </div>
+  <div class="name-list-container">
+    <ul id="name-list">
 
-        </ul>
-      </div>
-    </div>
+    </ul>
+  </div>
+</div>
 
-    <script src="../JS/personList.js"></script>
-  </body>
+<script src="../JS/personList.js"></script>
+</body>
 </html>

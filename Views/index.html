@@ -1,108 +1,109 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Lab #1</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/style.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-toggleable-md navbar-light justify-content-between">
-      <a class="navbar-brand" href="#">IMP</a>
-      <div class="navbar-toggler-right justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
-               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Labs
-            </a>
-            <div class="dropdown-menu" id="labDropdown" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item active" href="../Views/index.html">Lab #1</a>
-              <a class="dropdown-item" href="../Views/labTwo.html">Lab #2</a>
-              <a class="dropdown-item" href="../Views/labThree.html">Lab #3</a>
-              <a class="dropdown-item" href="../Views/labFour.html">Lab #4</a>
-              <a class="dropdown-item" href="../Views/labFive.html">Lab #5</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid">
-
-      <h1 class="text-center">Lab #1</h1>
-
-      <h1 class="mt-5">Assignment #1</h1>
-      <p class="lead">Definitions</p>
-      <hr class="my-4">
-      <p><strong>HTML - HyperText Markup Language.</strong> HTML is a markup language used to make websites. It is often
-        referred to as the structure of the website. The elements are represented by tags and the browser uses the tags
-        to render the content.<br><br>
-
-        <strong>CSS - Cascading Style Sheets.</strong> CSS is a language used to describe the presentation of HTML
-        elements displayed on the screen. CSS controls all of the styles such as colors, fonts, alignment, etc.<br><br>
-
-        <strong>JavaScript -</strong> JavaScript is a scripting language used for web development. It is used to enhance
-        the HTML. JavaScript can make the webpage dynamic by including animations, reacting to events, accepting user
-        inputs, etc.<br><br>
-
-        <strong>HTTP - HyperText Transfer Protocol.</strong> HTTP is a protocol which defines how messages are formatted
-        and transmitted. HTTP is a stateless protocol because every command is independent of the ones that came before
-        it.<br><br>
-
-        <strong>HTML5 -</strong> HTML5 is a W3C specification that defines the fifth revision of HTML. HTML5 has many
-        new features including embedded graphics, audio, video, new elements to section the page like article, nav,
-        source, and also new features which address web applications.<br><br>
-
-        <strong>Dynamic HTML (DHTML) - Dynamic HyperText Markup Language.</strong> DHTML is a combination of web
-        technologies including HTML, JS, CSS, and the DOM to enhance the user’s experience. This includes dynamic
-        content which users can manipulate, dynamic positioning of elements, dynamic style allowing the user to change
-        the page’s color, font, size, or content.
-      </p>
-
-      <h1 class="mt-5">Assignment #2</h1>
-      <p class="lead">Coding Conventions</p>
-      <hr class="my-4">
-      <p>I read both pages to learn about coding conventions.<br>
-        <a href="https://en.wikipedia.org/wiki/Coding_conventions">https://en.wikipedia.org/wiki/Coding_conventions</a><br>
-        <a href="http://codeguide.co/">http://codeguide.co/</a></p>
-
-      <h1 class="mt-5">Assignment #3</h1>
-      <p class="lead">External Files</p>
-      <hr class="my-4">
-      <p>This page contains external CSS and JavaScript files.</p>
-
-      <h1 class="mt-5">Assignment #4</h1>
-      <p class="lead">Developer Tools</p>
-      <hr class="my-4">
-      <p>I use the Google Chrome Developer Tools.</p>
-
-      <h1 class="mt-5">Assignment #5</h1>
-      <p class="lead">Dynamic Name List</p>
-      <hr class="my-4">
-      <div class="input-group mb-3 w-25">
-        <input type="text" class="form-control" id="name-input" placeholder="Name" aria-label="Name"
-               aria-describedby="basic-addon2" onkeydown="keyPress(event)">
-        <div class="input-group-append">
-          <button class="btn" type="button" onclick="addName()">Add</button>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>Lab #1</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+          integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+          integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+          crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+          integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+          crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+<nav class="navbar navbar-toggleable-md navbar-light justify-content-between">
+  <a class="navbar-brand" href="#">IMP</a>
+  <div class="navbar-toggler-right justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Labs
+        </a>
+        <div class="dropdown-menu" id="labDropdown" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item active" href="../Views/index.html">Lab #1</a>
+          <a class="dropdown-item" href="../Views/labTwo.html">Lab #2</a>
+          <a class="dropdown-item" href="../Views/labThree.html">Lab #3</a>
+          <a class="dropdown-item" href="../Views/labFour.html">Lab #4</a>
+          <a class="dropdown-item" href="../Views/labFive.html">Lab #5</a>
+          <a class="dropdown-item" href="../Views/labSix.html">Lab #6</a>
         </div>
-      </div>
-      <div class="list-container">
-        <ul class="list-group" id="name-list"></ul>
-      </div>
-    </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    <script src="../JS/animate.js"></script>
-  </body>
+<div class="container-fluid">
+
+  <h1 class="text-center">Lab #1</h1>
+
+  <h1 class="mt-5">Assignment #1</h1>
+  <p class="lead">Definitions</p>
+  <hr class="my-4">
+  <p><strong>HTML - HyperText Markup Language.</strong> HTML is a markup language used to make websites. It is often
+    referred to as the structure of the website. The elements are represented by tags and the browser uses the tags
+    to render the content.<br><br>
+
+    <strong>CSS - Cascading Style Sheets.</strong> CSS is a language used to describe the presentation of HTML
+    elements displayed on the screen. CSS controls all of the styles such as colors, fonts, alignment, etc.<br><br>
+
+    <strong>JavaScript -</strong> JavaScript is a scripting language used for web development. It is used to enhance
+    the HTML. JavaScript can make the webpage dynamic by including animations, reacting to events, accepting user
+    inputs, etc.<br><br>
+
+    <strong>HTTP - HyperText Transfer Protocol.</strong> HTTP is a protocol which defines how messages are formatted
+    and transmitted. HTTP is a stateless protocol because every command is independent of the ones that came before
+    it.<br><br>
+
+    <strong>HTML5 -</strong> HTML5 is a W3C specification that defines the fifth revision of HTML. HTML5 has many
+    new features including embedded graphics, audio, video, new elements to section the page like article, nav,
+    source, and also new features which address web applications.<br><br>
+
+    <strong>Dynamic HTML (DHTML) - Dynamic HyperText Markup Language.</strong> DHTML is a combination of web
+    technologies including HTML, JS, CSS, and the DOM to enhance the user’s experience. This includes dynamic
+    content which users can manipulate, dynamic positioning of elements, dynamic style allowing the user to change
+    the page’s color, font, size, or content.
+  </p>
+
+  <h1 class="mt-5">Assignment #2</h1>
+  <p class="lead">Coding Conventions</p>
+  <hr class="my-4">
+  <p>I read both pages to learn about coding conventions.<br>
+    <a href="https://en.wikipedia.org/wiki/Coding_conventions">https://en.wikipedia.org/wiki/Coding_conventions</a><br>
+    <a href="http://codeguide.co/">http://codeguide.co/</a></p>
+
+  <h1 class="mt-5">Assignment #3</h1>
+  <p class="lead">External Files</p>
+  <hr class="my-4">
+  <p>This page contains external CSS and JavaScript files.</p>
+
+  <h1 class="mt-5">Assignment #4</h1>
+  <p class="lead">Developer Tools</p>
+  <hr class="my-4">
+  <p>I use the Google Chrome Developer Tools.</p>
+
+  <h1 class="mt-5">Assignment #5</h1>
+  <p class="lead">Dynamic Name List</p>
+  <hr class="my-4">
+  <div class="input-group mb-3 w-25">
+    <input type="text" class="form-control" id="name-input" placeholder="Name" aria-label="Name"
+           aria-describedby="basic-addon2" onkeydown="keyPress(event)">
+    <div class="input-group-append">
+      <button class="btn" type="button" onclick="addName()">Add</button>
+    </div>
+  </div>
+  <div class="list-container">
+    <ul class="list-group" id="name-list"></ul>
+  </div>
+</div>
+
+<script src="../JS/animate.js"></script>
+</body>
 </html>

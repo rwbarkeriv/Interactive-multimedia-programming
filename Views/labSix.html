@@ -4,20 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lab #3</title>
+  <title>Lab #6</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
         integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-          integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-          crossorigin="anonymous"></script>
+  <script src="../JS/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
           integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
           crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
           integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
           crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../CSS/audio.css">
   <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/flickr.css">
 </head>
 <body>
 <nav class="navbar navbar-toggleable-md navbar-light justify-content-between">
@@ -32,10 +30,10 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="../Views/index.html">Lab #1</a>
           <a class="dropdown-item" href="../Views/labTwo.html">Lab #2</a>
-          <a class="dropdown-item active" href="../Views/labThree.html">Lab #3</a>
+          <a class="dropdown-item" href="../Views/labThree.html">Lab #3</a>
           <a class="dropdown-item" href="../Views/labFour.html">Lab #4</a>
           <a class="dropdown-item" href="../Views/labFive.html">Lab #5</a>
-          <a class="dropdown-item" href="../Views/labSix.html">Lab #6</a>
+          <a class="dropdown-item active" href="../Views/labSix.html">Lab #6</a>
         </div>
       </li>
     </ul>
@@ -43,55 +41,17 @@
 </nav>
 
 <div class="container-fluid">
-
-  <h1 class="text-center">Lab #3</h1>
-
+  <h1 class="text-center">Lab #6</h1>
   <h1 class="mt-5">Assignment #1</h1>
-  <p class="lead">Web Sockets</p>
+  <p class="lead">Flickr Photo Wall</p>
   <hr class="my-4">
 
-  <a href="webSocket.html">Web Socket Example</a>
-
-  <h1 class="mt-5">Assignment #2</h1>
-  <p class="lead">Local Storage</p>
-  <hr class="my-4">
-
-  <a href="personListMVC.html">Person List MVC</a>
-
-  <h1 class="mt-5">Assignment #3</h1>
-  <p class="lead">Audio Element</p>
-  <hr class="my-4">
-
-  <button type="button" class="btn btn-primary" onclick="audio.play()">Play</button>
-  <button type="button" class="btn btn-secondary" onclick="audio.pause()">Pause</button>
-
-  <div class="volume-container mt-2">
-    <input class="slider" id="volume" type="range" min="0" max="1" step=".01" value=".5"
-           onchange="changeAudioVolume(event)">
+  <div class="center-block input-box">
+    <input class="form-control input" id="keyword" type="text" placeholder="Search">
+    <button class="btn btn-primary" id="load" type="button" name="searchFlickr" onclick="searchFlickr()">Search</button>
   </div>
-
-  <h1 class="mt-5">Assignment #4</h1>
-  <p class="lead">Video Element</p>
-  <hr class="my-4">
-
-  <video class="ml-1" id="video" width="140" height="240">
-    <source src="../Assets/A494D48B-1681-4536-8A8F-21B61D46AA6C.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <br>
-
-  <button id="play" type="button" class="btn btn-primary" onclick="video.play()">Play</button>
-  <button id="pause" type="button" class="btn btn-secondary" onclick="video.pause()">Pause</button>
-
-  <div class="volume-container mt-2">
-    <input class="slider" id="volume-control" type="range" min="0" max="1" step=".01" value=".5"
-           onchange="changeVideoVolume(event)">
-  </div>
-
+  <div class="center-block row"></div>
 </div>
-
-<script src="../JS/audio.js"></script>
-<script src="../JS/video.js"></script>
-<script src="../JS/animate.js"></script>
+<script src="../JS/flickr.js"></script>
 </body>
 </html>
