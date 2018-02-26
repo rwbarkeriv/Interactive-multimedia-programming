@@ -19,9 +19,9 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -49,20 +49,20 @@ q:before, q:after {
 }
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 /*My CSS*/
 
 #name-list-container {
   margin-top: 25vh;
-  margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  margin-left: auto;
   width: 25em;
   height: 25em;
   background-color: #48ACF0;
+  text-align: center;
 }
 
 .input-container {
@@ -76,9 +76,9 @@ h1 {
 
 .name {
   margin-top: .3em;
+  margin-right: auto;
   margin-bottom: .3em;
   margin-left: auto;
-  margin-right: auto;
   width: 10.8em;
   background-color: white;
 }

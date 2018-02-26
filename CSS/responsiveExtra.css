@@ -19,9 +19,9 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -49,8 +49,8 @@ q:before, q:after {
 }
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 /*My CSS*/
@@ -84,22 +84,22 @@ sub {
 }
 
 #contentContainer {
-  margin-left: 2em;
   margin-right: 2em;
+  margin-left: 2em;
 }
 
 .sidenav {
   float: left;
-  height: 140vh;
-  margin-left: 1em;
   margin-right: 1em;
+  margin-left: 1em;
   width: 10%;
+  height: 140vh;
 }
 
 .sidenav a {
-  font-size: 1.7em;
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
+  font-size: 1.7em;
   line-height: 1.3em;
 }
 
@@ -116,9 +116,9 @@ sub {
 }
 
 .topnav a {
-  font-size: 1.7em;
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
+  font-size: 1.7em;
   line-height: 1.3em;
 }
 
@@ -127,21 +127,20 @@ sub {
 }
 
 .images {
-  height: 85%;
-  width: 80%;
   padding: 1em;
+  width: 80%;
+  height: 85%;
   border: black .001em solid;
 }
 
 figure {
   margin: auto;
+  margin-bottom: 1em;
   width: 80%;
   text-align: center;
-  margin-bottom: 1em;
 
 }
 
 figcaption {
   padding-bottom: .5em;
 }
-
